@@ -1,0 +1,36 @@
+{
+  "name": "grokkingAlgotithms",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "bin": {
+    "index": "dist/index.js"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "test": "jest --colors",
+    "babel-node": "babel-node",
+    "eslint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drytikov/GrokkingAlgorithms.git"
+  },
+  "author": "drytikov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drytikov/GrokkingAlgorithms/issues"
+  },
+  "homepage": "https://github.com/drytikov/GrokkingAlgorithms#readme",
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-preset-env": "*",
+    "babel-preset-stage-0": "*",
+    "babel-eslint": "*",
+    "eslint": "*",
+    "eslint-config-airbnb-base": "*",
+    "eslint-plugin-import": "*"
+  }
+}
